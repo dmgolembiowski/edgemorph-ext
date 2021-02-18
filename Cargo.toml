@@ -1,0 +1,39 @@
+[package]
+name = "cargo-edmx"
+version = "0.1.0"
+authors = ["David Golembiowski <david(at)dgolembiowski(dot)com>"]
+categories = [
+    "development-tools",
+    "development-tools::cargo-plugins",
+]
+edition = "2018"
+description = "edgemorph-ext is an (unofficial) EdgeDB extension builder that is built on top of `pgx`"
+documentation = "https://github.com/dmgolembiowski/edgemorph-ext/blob/master/README.md#available-subcommands"
+homepage = "https://edgemor.ph/edmx"
+keywords = [
+    "cargo",
+    "cargo-subcommand",
+    "cli",
+    "dependencies",
+    "crates",
+    "edgedb",
+    "edgemorph"
+]
+license = "Apache-2.0/MIT See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html"
+readme = "README.md"
+repository = "https://github.com/dmgolembiowski/edgemorph-ext"
+
+[[bin]]
+name = "cargo-edmx"
+path = "src/bin/edmx/main.rs"
+required-features = ["edmx"]
+
+[badges.appveyor]
+repository = "dmgolembiowski/edgemorph-ext"
+
+[badges.travis-ci]
+repository =  "dmgolembiowski/edgemorph-ext"
+
+[dependencies]
+pgx = { version = "0.1.19", features = ["pg13"] }
+
