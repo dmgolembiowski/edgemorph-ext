@@ -11,7 +11,7 @@
   </a>
 </p>
 
-> edgemorph-ext 
+> `edgemorph-ext` is an unofficial EdgeDB extension builder that is built on top of [`pgx`](https://github.com/zombodb/pgx)
 
 ### 🏠 [Homepage](https://edgemor.ph/edmx)
 
