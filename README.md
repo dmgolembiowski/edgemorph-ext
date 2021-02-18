@@ -24,7 +24,9 @@ cargo install cargo-edmx
 ## Usage
 
 ```sh
-cargo edmx my-edgedb-extension
+cargo edmx create my-edgedb-extension
+cargo edmx build
+cargo edmx save
 ```
 
 ## Author
